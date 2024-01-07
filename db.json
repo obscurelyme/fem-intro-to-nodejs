@@ -1,0 +1,28 @@
+{
+  "notes": [
+    {
+      "content": "Clean up my room",
+      "id": 1704267983577
+    },
+    {
+      "content": "Clean the apartment",
+      "id": 1704268107771
+    },
+    {
+      "content": "Clean the dishes",
+      "id": 1704268114348
+    },
+    {
+      "content": "Finish homework",
+      "id": 1704268334055
+    },
+    {
+      "content": "Make new friends",
+      "id": 1704317179803,
+      "tags": [
+        "social",
+        "outside"
+      ]
+    }
+  ]
+}

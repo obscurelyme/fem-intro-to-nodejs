@@ -1,0 +1,10 @@
+{
+  "name": "intro-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "note": "index.js"
+  },
+  "license": "MIT"
+}
