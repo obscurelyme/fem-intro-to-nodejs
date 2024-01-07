@@ -2,19 +2,23 @@
   "notes": [
     {
       "content": "Clean up my room",
-      "id": 1704267983577
+      "id": 1704267983577,
+      "tags": []
     },
     {
       "content": "Clean the apartment",
-      "id": 1704268107771
+      "id": 1704268107771,
+      "tags": []
     },
     {
       "content": "Clean the dishes",
-      "id": 1704268114348
+      "id": 1704268114348,
+      "tags": []
     },
     {
       "content": "Finish homework",
-      "id": 1704268334055
+      "id": 1704268334055,
+      "tags": []
     },
     {
       "content": "Make new friends",
@@ -23,6 +27,11 @@
         "social",
         "outside"
       ]
+    },
+    {
+      "content": "Hello, there",
+      "id": 1704607279642,
+      "tags": []
     }
   ]
 }

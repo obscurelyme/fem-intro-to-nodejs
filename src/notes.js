@@ -7,9 +7,7 @@ export async function createNote(note, tags) {
     tags,
   }
 
-  await insert(newNote)
-
-  return newNote
+  return await insert(newNote)
 }
 
 export async function getAllNotes() {
@@ -25,12 +23,15 @@ export async function findNotes(filter) {
 
 export async function removeNote(id) {
   const db = await getDB();
-  const i = db.notes.findIndex(function findById(note) {
+  const note = db.notes.find(function findById(note) {
     return id == note.id
   })
-  const note = {...db.notes[i] }
-  db.notes.splice(i, 1)
-  await saveDB(db)
+  if (note) {
+    const newDb = db.notes.filter((n) => {
+      return n.id != note.id
+    })
+    await saveDB(newDb)
+  }
   return note
 }
 

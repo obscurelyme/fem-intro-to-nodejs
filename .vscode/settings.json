@@ -1,0 +1,16 @@
+{
+  "jestrunner.jestCommand": "node --experimental-vm-modules node_modules/jest/bin/jest.js --",
+  "jestrunner.debugOptions": {
+    "runtimeExecutable": "node",
+    "runtimeArgs": [
+      "--experimental-vm-modules",
+      "node_modules/jest/bin/jest.js",
+      // "--t",
+      // "${fileBasename}",
+      "--runInBand",
+      "--no-cache",
+      "--watchAll=false",
+      "--color"
+    ]
+  },
+}
