@@ -2,6 +2,7 @@ import yargs from 'yargs'
 import { hideBin } from 'yargs/helpers'
 
 import { createNote, getAllNotes, findNotes, removeNote, clean } from './notes.js'
+import { start } from './server.js'
 
 yargs(hideBin(process.argv))
   .command('new <note>', 'Create a new note', function builder(yargs) {
@@ -47,8 +48,9 @@ yargs(hideBin(process.argv))
       default: 5000,
       describe: 'port to bind on'
     })
-  }, function web(argv) {
-    // TODO: launch http server
+  }, async function web(argv) {
+    const notes = await getAllNotes();
+    start(notes, argv.port)
   })
   .command('clean', 'Remove all notes', () => {}, async function () {
     await clean()
